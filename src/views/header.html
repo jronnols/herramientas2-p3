@@ -1,24 +1,20 @@
-<header class="header">
-    <nav class="navbar navbar-expand-sm header__navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.webp" alt="Logo" class="header__logo" height="120" width="120">
-            </a>
+<header class="bg-primary p-2">
+    <nav class="grid grid-cols-2 grid-rows-2">
+        <a class="row-start-1 col-start-1" href="index.html">
+            <img src="assets/images/logo.webp" alt="Logo" class="rounded-full shadow-md w-12 sm:w-30 h-12 sm:h-30">
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="row-start-1 col-start-2 justify-self-end self-start border rounded-md w-12 h-10 " type="button">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav header__navlinks">
-                    <li class="nav-item">
-                        <a class="nav-link header__navlink header__speakers" href="speakers.html">Participantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__navlink header__article" href="index.html">Las jornadas</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <ul class="row-start-2 col-span-2">
+            <li class="">
+                <a class="" href="speakers.html">Participantes</a>
+            </li>
+            <li class="">
+                <a class="" href="index.html">Las jornadas</a>
+            </li>
+        </ul>
     </nav>
 </header>
