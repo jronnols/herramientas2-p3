@@ -1,0 +1,9 @@
+.font-bebas-lg {
+    @apply text-3xl;
+    font-family: var(--font-header);
+}
+
+.font-bebas-xl {
+    @apply text-6xl;
+    font-family: var(--font-header);
+}

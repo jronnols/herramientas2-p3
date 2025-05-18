@@ -10,10 +10,22 @@
 @import "tailwindcss/index.css";
 
 /**
+ * Import fonts
+ */
+
+@import "fonts";
+
+/**
  * Import variables
  */
 
 @import "variables";
+
+/**
+ * Import utilities
+ */
+
+@import "utilities";
 
 /**
  * Import npm dependencies
@@ -22,6 +34,7 @@
  */
 
 @import "@fortawesome/fontawesome-free/css/all.css";
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
