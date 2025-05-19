@@ -7,3 +7,22 @@
     @apply text-6xl;
     font-family: var(--font-header);
 }
+
+.section-separator::after {
+    content: "~~~~~~";
+    @apply block text-center text-accent text-3xl mt-6;
+}
+
+.quote-decoration {
+    @apply italic px-4;
+
+    &::before {
+        content: "“";
+        @apply text-3xl text-accent;
+    }
+
+    &::after {
+        content: "”";
+        @apply text-3xl text-accent;
+    }
+}
