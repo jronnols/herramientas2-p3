@@ -1,14 +1,21 @@
-@theme {
-  --color-primary: #226A99;
-  //--color-secondary: #F9E79F;
-  --color-accent: #1D4E89;
-  //--color-background: #fcf9ee;
-  //--color-text: #333333;
-  --color-light: #ffffff;
-  //--color-link: #226A99;
-  //--color-link-hover: #1b5a7c;
-  --color-body: #212529;
+@use "sass:color";
 
-  //--font-base: "Inter", Arial, sans-serif;
+// Colores primarios
+$primary-color: #226A99;
+$secondary-color: #F9E79F;
+$accent-color: #1D4E89;
+$header-state-color: color.scale($primary-color, $lightness: -20%);
+
+// Colores de texto
+$text-color: #212529;
+$text-color-light: #fff;
+
+@theme {
+  --color-primary: #{$primary-color};
+  --color-secondary: #{$secondary-color};
+  --color-accent: #{$accent-color};
+  --color-light: #{$text-color-light};
+  --color-body: #{$text-color};
+  --color-header-state: #{$header-state-color};
   --font-header: "Bebas Neue", sans-serif;
 }
