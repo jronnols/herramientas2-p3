@@ -28,15 +28,30 @@
             <p class="mt-8">Juan Pérez, reconocido especialista en gestión de residuos, fue uno de los participantes destacados durante las jornadas en la edición anterior. Su ponencia sobre modelos de negocio circulares despertó gran interés y dejó una huella muy positiva en el público asistente.</p>
         </section>
 
-        <section>
+        <section class="section-separator">
             <p class="mt-8">Además, se organizan talleres prácticos que permiten a los asistentes profundizar en distintas temáticas clave, como el ecodiseño, la eficiencia energética, la logística inversa o las estrategias de reciclaje avanzado. Estos talleres fomentan el aprendizaje activo mediante dinámicas colaborativas, casos prácticos y herramientas que los participantes podrán aplicar directamente en sus respectivos proyectos profesionales o académicos.</p>
 
             <p class="mt-4">No te pierdas:</p>
 
             <ul class="mt-4 border border-primary rounded-lg">
-                <li class="py-2 px-4 border-b border-primary"><i class="fas fa-user"></i> Más de 20 participantes invitados</li>
-                <li class="py-2 px-4 border-b border-primary"><i class="fas fa-chalkboard-teacher"></i> 5 talleres prácticos</li>
-                <li class="py-2 px-4"><i class="fas fa-network-wired"></i> Networking con profesionales del sector</li>
+                <include src="components/list-item.html">
+                    {
+                    "icon": "fa-user",
+                    "text": "Más de 20 participantes invitados"
+                    }
+                </include>
+                <include src="components/list-item.html">
+                    {
+                    "icon": "fa-chalkboard-teacher",
+                    "text": "5 talleres prácticos"
+                    }
+                </include>
+                <include src="components/list-item.html">
+                    {
+                    "icon": "fa-network-wired",
+                    "text": "Networking con profesionales del sector"
+                    }
+                </include>
             </ul>
 
             <p>Si no puedes asistir, ¡no te preocupes! Publicaremos grabaciones en nuestra web para que nadie se quede sin aprovechar el contenido de estas jornadas.</p>
