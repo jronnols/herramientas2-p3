@@ -1,22 +1,30 @@
-.font-bebas {
-    font-family: var(--font-header);
-}
+@layer utilities {
 
-.section-separator::after {
-    content: "~~~~~~";
-    @apply block text-center text-accent text-3xl mt-6;
-}
-
-.quote-decoration {
-    @apply italic px-4;
-
-    &::before {
-        content: "“";
-        @apply text-3xl text-accent;
+    .menu-item {
+        @apply font-bebas text-3xl text-light text-center hover:text-secondary rounded-full;
     }
 
-    &::after {
-        content: "”";
-        @apply text-3xl text-accent;
+    .image {
+        @apply rounded-lg shadow-md shadow-gray-400 object-cover aspect-4/3 md:aspect-video;
     }
+
+    .section-separator::after {
+        content: "~~~~~~";
+        @apply block text-center text-accent text-3xl mt-6;
+    }
+
+    .quote-decoration {
+        @apply italic px-4;
+
+        &::before {
+            content: "“";
+            @apply text-3xl text-accent;
+        }
+
+        &::after {
+            content: "”";
+            @apply text-3xl text-accent;
+        }
+    }
+
 }
