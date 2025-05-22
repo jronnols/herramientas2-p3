@@ -1,20 +1,20 @@
 <header class="bg-primary p-3">
     <nav class="max-w-5xl flex flex-wrap justify-between items-center mx-auto">
-        <a class="" href="index.html">
+        <a href="index.html">
             <img src="assets/images/logo.webp" alt="Logo" class="rounded-full shadow-md w-12 sm:w-30 h-12 sm:h-30">
         </a>
 
-        <button class="border rounded-md px-3 py-1 border-gray-600 leading-none" type="button">
+        <button id="menu-toggle" class="sm:hidden border rounded-md px-3 py-1 border-gray-600 leading-none" type="button">
             <span class="bg-[url('/src/assets/images/menu-icon.svg')] inline-block w-8 h-8 align-middle"></span>
         </button>
 
-        <div class="grow basis-full items-center">
-            <ul class="flex-col flex pt-2">
+        <div id="menu" class="hidden sm:block w-full sm:w-auto">
+            <ul class="flex flex-col pt-2 sm:flex-row sm:items-center sm:gap-6">
                 <li class="font-bebas text-3xl text-light text-center hover:text-secondary rounded-full {{speakers}}">
-                    <a class="block py-2" href="speakers.html">Participantes</a>
+                    <a class="block p-2" href="speakers.html">Participantes</a>
                 </li>
                 <li class="font-bebas text-3xl text-light text-center hover:text-secondary rounded-full {{article}}">
-                    <a class="block py-2" href="index.html">Las jornadas</a>
+                    <a class="block p-2" href="index.html">Las jornadas</a>
                 </li>
             </ul>
         </div>
